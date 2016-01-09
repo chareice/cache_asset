@@ -1,0 +1,14 @@
+{
+  "name": "cache_asset",
+  "version": "0.1.0",
+  "description": "cache your asset files",
+  "bin": {
+    "cache-asset": "bin/cache_asset.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Chareice <chareice@live.com> (https://chareice.com)",
+  "license": "ISC"
+}
