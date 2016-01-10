@@ -21,6 +21,8 @@ var result = UglifyJS.minify(lib + '/cache_asset.js', {
 });
 
 var workingDirectory = process.cwd();
+// var insertCode = fs.readFileSync(lib + '/cache_asset.js');
+
 var insertCode = result.code;
 
 var userArgs = process.argv.slice(2);
@@ -70,6 +72,7 @@ fs.readFile(targetFilePath, 'utf-8', function(err, data){
   var stringifyItems = JSON.stringify(items);
   var runningScript = 'cache_asset.init(' + stringifyItems + ');';
   $('body').append('<script>' + runningScript + '</script>');
+	// var writingFile = path.join(path.dirname(fs.realpathSync(__filename)), '../test/index.html');
   fs.writeFile(targetFilePath, $.html(), function(err) {
     if(err) {
         return console.log(err);
