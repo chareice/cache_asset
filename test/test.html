@@ -1,0 +1,28 @@
+<!doctype html> <html class="no-js" ng-app="xuanfengApp" ng-controller="RootCtrl"> <head> <meta charset="utf-8"> <title ng-bind="pageTitle"></title> <base href="/"> <meta name="format-detection" content="telephone=no"> <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">    </head><body> <div class="global-refresh"></div> <div ng-view="" ng-class="{&apos;bgWhite&apos;: bgIsWhite}" class="ionic"></div> <div class="global-loading" ng-show="isShowLoading"> <div class="logo"></div> </div> <script type="text/ng-template" id="/footer.html"><div class="footer">
+        <div class="tabs tabs-icon-top fix-bottom" style="background-size:0; border-top: 1px solid #ccc !important;">
+          <a class="tab-item" ng-click="goIndex()">
+            <i class="icon icon-footer-sprite"
+               ng-class="{'mainpage': index, 'mainpage-gray': !index}"></i>
+            首页
+          </a>
+          <a class="tab-item" ng-click="goAccount()">
+
+            <i class="icon icon-footer-sprite"
+              ng-class="{'mine': my, 'mine-gray': !my}"></i>
+            我的
+          </a>
+          <a class="tab-item" ng-click="goIntro()">
+
+            <i class="icon icon-footer-sprite"
+              ng-class="{'about': intro, 'about-gray': !intro}"></i>
+            关于
+          </a>
+        </div>
+      </div></script>    <script>var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?eaad4989c2fe34d10eea75b2878d89d5";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();</script>  
+<script>var cache_asset={};cache_asset.queueHash={},cache_asset.findItemFromQueueHashByKey=function(e){for(var t=Object.keys(this.queueHash),s=0;s<t.length;s++)for(var a=0;a<this.queueHash[t[s]].length;a++){var n=this.queueHash[t[s]][a];if(n.key==e)return n}return null},cache_asset.setQueueHashContent=function(e,t){var s=(this.fileType(e),this.findItemFromQueueHashByKey(e));console.log(s),console.log(e),console.log(this.queueHash),s.content=t;for(var a=Object.keys(this.queueHash),n=0;n<a.length;n++){for(var c=(Object.keys(a[n]),""),o=0;o<this.queueHash[a[n]].length;o++){var s=this.queueHash[a[n]][o];if(!s.content)return;c+=s.content}switch(a[n]){case"js":this.setScriptTag(c);break;case"css":this.setStyleTag(c);break;default:console.error("unsupport file type"+a[n])}}},cache_asset.setScriptTag=function(e){var t=document.createElement("script");t.type="text/javascript",t.text=e,document.body.appendChild(t)},cache_asset.setStyleTag=function(e){var t=document.createElement("style");t.type="text/css";var s=document.createTextNode(e);t.appendChild(s),document.head.appendChild(t)},cache_asset.fileType=function(e){return e.split(".").pop()},cache_asset.init=function(e){for(var t=0;t<e.length;t++){var s=this.fileType(e[t].key);this.queueHash[s]||(this.queueHash[s]=[]);var a={content:null,version:e[t].version,key:e[t].key};console.log(this.queueHash[s]),this.queueHash[s].push(a)}for(var t=0;t<e.length;t++)this.cache(e[t].key,e[t].version,e[t].downloadUrl)},cache_asset.cache=function(e,t,s){var a="cache_asset_"+e,n=window.localStorage.getItem(a);if(n){var c=JSON.parse(n);c.version!=t?this.insertItem(e,t,s):this.setQueueHashContent(e,c.content)}else this.insertItem(e,t,s)},cache_asset.insertItem=function(e,t,s){var a=this,n=new XMLHttpRequest;n.open("GET",s,!0),n.addEventListener("load",function(s){if(200===n.status){var c=s.target.responseText;a.setQueueHashContent(e,c);var o={content:c,version:t};localStorage.setItem("cache_asset_"+e,JSON.stringify(o))}},!1),n.send()};try{module.exports=cache_asset}catch(e){}</script><script>cache_asset.init([{"downloadUrl":"http://cdn.m.123hxf.com/styles/vendor.e06e2386.css","version":"e06e2386","key":"http://cdn.m.123hxf.com/styles/vendor..css"},{"downloadUrl":"http://cdn.m.123hxf.com/styles/main.ea97b371.css","version":"ea97b371","key":"http://cdn.m.123hxf.com/styles/main..css"},{"downloadUrl":"http://cdn.m.123hxf.com/assets/js/weixin-sdk.js","version":"com/assets/js/weixin-sdk","key":"http://cdn.m.123hxf..js"},{"downloadUrl":"http://cdn.m.123hxf.com/scripts/vendor.57a51f7a.js","version":"57a51f7a","key":"http://cdn.m.123hxf.com/scripts/vendor..js"},{"downloadUrl":"http://cdn.m.123hxf.com/scripts/scripts.2eacf411.js","version":"2eacf411","key":"http://cdn.m.123hxf.com/scripts/scripts..js"}]);</script></body></html>
